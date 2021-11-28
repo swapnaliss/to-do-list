@@ -38,6 +38,11 @@ function countCheckBox() {
 
 }
 
+
+function logout(){
+  window.location = "index.html";
+}
+
 window.addEventListener("load", todoList);
 
 
