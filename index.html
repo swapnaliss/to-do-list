@@ -17,30 +17,31 @@
         <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <form action="" method="post" onsubmit="loginPageValidate()">
+  <form action="home.html" method="post" onsubmit="loginPageValidate()">
     <div class="">
       <i class="fa fa-user-alt"></i>
     </div>
   
     <div class="container">
       <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" onkeyup="loginUsername()" >
+      <input type="text" placeholder="Enter Username" id = "uname" onkeyup="loginUsername()" >
       <p id="unameerror" style="color: red;" ></p>
   
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" onkeyup="loginPassword()"> 
+      <input type="password" placeholder="Enter Password" id = "psw" onkeyup="loginPassword()"> 
       <p id="pwderror" style="color: red;"></p>
   
-      <button type="submit" onclick="loginPageValidate()">Login</button>
+      <button type="button" onclick="loginPageValidate()">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
-  
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
   </form>
+  
+  
+
+
+  
+
 </body>
 </html>
