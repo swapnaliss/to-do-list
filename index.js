@@ -4,6 +4,7 @@ function loginUsername() {
 
     if (uname.value === '') {
         unameerror.innerHTML = "Field can not be empty";
+        uname.focus();
         return false;
 
     } else {
@@ -14,6 +15,7 @@ function loginUsername() {
         unameerror.innerHTML = " ";
         return true;
     } else {
+        uname.focus();
         unameerror.innerHTML = "Username must match.";
     }
     
@@ -29,6 +31,7 @@ function loginPassword() {
     if (pwd.value === '') {
 
         pwderror.innerHTML = "Field can not be empty";
+        pwd.focus();
         return false;
 
     } else {
@@ -42,6 +45,7 @@ function loginPassword() {
 
     } else {
         pwderror.innerHTML = "Password must match.";
+        pwd.focus();
         return false;
     }
 
@@ -55,9 +59,7 @@ function loginPageValidate() {
         }, 1000);
         
 
-    } else {
-        alert('Something went wrong');
-    }
+    } 
 
 }
 
