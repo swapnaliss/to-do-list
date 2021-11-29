@@ -51,14 +51,11 @@ function loginPassword() {
 
 }
 function loginPageValidate() {
+    const uname = document.getElementById("uname");
+    
     if (loginUsername() && loginPassword()) {
+        localStorage.setItem("username", uname.value);
         window.location = "home.html";
-
-        setTimeout(() => {
-            alert('Login successfully');
-        }, 1000);
-        
-
     } 
 
 }

@@ -1,4 +1,10 @@
 function todoList() {
+  const profileName = document.getElementById("profileName");
+
+  const username = localStorage.getItem("username");
+
+  profileName.innerHTML = `Profile Name : ${username}`
+
   var xhttp = new XMLHttpRequest();
 
   xhttp.onreadystatechange = function () {
